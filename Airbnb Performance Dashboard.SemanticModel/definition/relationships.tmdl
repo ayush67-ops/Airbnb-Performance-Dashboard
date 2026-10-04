@@ -1,0 +1,15 @@
+relationship aba9614b-1585-4487-b01a-654ceda6928c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Listings.host_since
+	toColumn: LocalDateTable_6bba13ad-99c5-4c6b-b734-ab166590bf92.Date
+
+relationship a765b8bb-ea13-4ecc-bd87-0d3df3aaccc5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Reviews.date
+	toColumn: LocalDateTable_67a68e45-2ee5-4fec-b868-b4e5561dc13d.Date
+
+relationship AutoDetected_ff34dd6a-4dcd-4899-96db-e72a59315467
+	crossFilteringBehavior: bothDirections
+	fromColumn: Reviews.listing_id
+	toColumn: Listings.listing_id
+
